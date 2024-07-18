@@ -1,0 +1,485 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --width-body-lg: 90%; 
+    --width-body-md: 90%; 
+    --width-body-sm: 94%; 
+    --transition: all 400ms ease; 
+}
+a{
+    color: rgb(8, 8, 84);
+}
+button{
+    font-family: "Poppins", sans-serif;
+    border: none;
+    cursor: pointer;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    max-width: 1440px;
+    scroll-behavior: smooth;
+}
+.center{
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+}
+h2,h3{
+    color: rgb(45, 6, 45);
+}
+.container{
+    width: var(--width-body-lg);
+    margin: 0 auto;
+}
+.btn{
+    padding: 0.8rem 1.8rem;
+    background: rgb(8, 8, 84);
+    border-radius: 5px;
+}
+.btn:hover{
+    background: transparent;
+    transition: var(--transition);
+}
+/* nav */
+nav{
+    box-shadow: 0 0 9px rgb(160, 153, 153);
+    margin-bottom: 4px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: relative;
+}
+.lii {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+.nav-section{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+.logo img{
+    width: 8rem;
+}
+.nav-section a:hover{
+    color: yellow;
+    transition: var(--transition);
+}
+.li-border{
+    border: 2px solid rgb(15, 14, 14);
+    padding: 1rem;
+    border-radius: 4px;
+}
+/* more info */
+.more-info{
+    background-image: url("./images/back1.jpg");
+    height: 35rem;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 2rem;
+   }
+.more-info-container{
+    position: absolute;
+    width: 70%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(34, 32, 32);
+    font-weight: 400;   
+    text-align: center;
+}
+.info-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.info-buttons a{
+    color: white;
+}
+.info-buttons a:hover{
+    background: white;
+    color: rgb(8, 8, 84);
+}
+.info-btn-2{
+    background: rgb(213, 213, 7);
+}
+/* features */
+.features{
+    margin-bottom: 2rem;
+}
+.features-cards{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.feature-card{
+    background: rgb(230, 218, 230);
+    padding: 2rem;
+}
+.feature-card:hover, .feature-card:hover i{
+    background: rgb(181, 134, 181);
+    color: white;
+    transition: var(--transition);
+}
+.feature-card i{
+    color: purple;
+    font-size: 1.9rem;
+}
+.feature-card p{
+    font-size: 0.8rem;
+}
+/* courses */
+.courses{
+    margin-bottom: 2rem;
+}
+.courses-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.course-card img{
+    height: 14rem;
+    width: 100%;
+}
+.course-card {
+    position: relative;
+    background: rgb(236, 231, 231);
+    padding: 0 0 2rem 0;
+    cursor: pointer;
+}
+.course-card:hover{
+    background: rgb(225, 207, 226);
+    transition: var(--transition);
+}
+.course-card p{
+    margin-top: 2rem;
+}
+.course-circle{
+    background: purple;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+}
+.left-course{
+    padding-left: 1.5rem;
+}
+.course-circle p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.course-rating i{
+    color: rgb(226, 226, 39);
+}
+/* registeration section */
+.register{
+    background-image: url(./images/signup.jpg);
+    height: 35rem;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 2rem;
+}
+.register-container{
+    display: flex;
+    justify-content: space-between;
+}
+.register-1, .register-1 h2{
+    color: white;
+    font-weight: 600;
+}
+.register-1 h2{
+    font-size: 2.2rem;
+}
+.register-1{
+    margin-top: 9rem;
+}
+.register-1-card{
+    display: flex;
+    gap: 1.5rem;
+}
+.reg-card{
+    background: rgb(178, 172, 158);
+    padding: 1.5rem 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.reg-card p{
+    font-size: 1.9rem;
+}
+.register-2{
+    background: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    height: fit-content;
+}
+.reg-2-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1rem;
+} 
+.p-input-small{
+    color: red;
+    font-size: 0.7rem;
+}
+.reg-2-input input{
+    height: 3rem;
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+#submit{
+    background: rgb(240, 240, 23);
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+
+}
+/* expertise section */
+.expertise{
+    overflow-x: hidden ;
+    margin-bottom: 2rem;
+}
+.expertise-slider-container-second{
+    display: flex;
+    /* gap: 1.5rem; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.swiper-card{
+    text-align: center;
+    background: rgb(241, 237, 228);
+    color: rgb(22, 21, 21);
+    padding: 2rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+.swiper-card img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.expertise-social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.expertise-social i{
+    color: black;
+    border: 1px solid black;
+    padding: 0.3rem;
+    margin-top: 0.4rem;
+    border-radius: 4px;
+}
+.swiper-pagination{
+    margin-top: 2rem;
+}
+footer{
+    background: rgb(4, 4, 52);
+    padding: 2rem 0;
+}
+.footer-container p, .footer-container h3 {
+    color: white;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-container-bottom{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+.footer-container-bottom a{
+    color: rgb(225, 204, 166); 
+}
+.footer-news p{
+    font-size: 0.9rem;
+}
+.footer-news-register{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.2rem;
+    align-items: center;
+}
+.footer-news-register input{
+    height: 2.5rem;
+    padding: 0.6rem;
+    width: 8rem;
+    background: rgb(11, 11, 167);
+    border: 1px solid rgb(4, 4, 52);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.footer-news-register a{
+    padding:8px;
+    width: 100%;
+    background: yellow;
+    text-align: center;
+}
+.footer-bottom, .footer-bottom-right i{
+    color: white;
+}
+.footer-bottom-right i{
+    border: 1px solid white;
+    background: transparent;
+}
+.footer-bottom{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between ;
+}
+
+@media screen and (max-width: 1118px) {
+    .container{
+        width: var(--width-body-md);
+    }
+    .nav-container i{
+        color: rgb(9, 9, 35);
+        font-size: 1.5rem;
+    }
+    
+    .lii {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    }
+    .CLOSE-{
+        opacity: 0;
+    }
+    .nav-container{
+        position: relative;
+    }
+    .nav-section{
+        display: flex;
+        flex-direction: column;
+        background: white;
+        width: 18rem;
+        gap: 1.5rem;
+        text-align: center;
+        box-shadow: 10px 10px 20px grey;
+        position: absolute;
+        top: 5rem;
+        right: -5%;
+        opacity: 0;
+    }
+    .nav-section li{
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .nav-section li:hover{
+        background: rgb(178, 165, 165);
+        transition: var(--transition);
+    }
+    /* more info */
+    .more-info-container{
+        top: 30%;
+        width: 100%;
+    }
+    .closed{
+        opacity: 0;
+    }
+    .display{
+        opacity: 1;
+        visibility: visible;
+        transition: var(--transition);
+        transform: rotate(360deg);
+    }
+    /* FEATURE */
+    .features-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    /* COURSES */
+    .courses-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* REGISTER */
+    .register{
+        height: 50rem;
+        background-image: url(./images/back2.jpg);
+    }
+    .p-input-small{
+        filter: saturate(3);
+    }
+    .register-container{
+        display: grid;
+    }
+    .register-2{
+        width: fit-content;
+    }
+    /* FOOTER */
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .footer-container-bottom{
+        gap: 0.6rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        width: var(--width-body-sm);
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .nav-section{
+        right: 3%;
+    }
+    .more-info-container{
+        top: 40%;
+    }
+    /* FEATURE */
+    .features-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+     }
+    /* COURSES */
+    .courses-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Register */
+    .register{
+        height: 60rem;
+        width: 100%;
+    }
+    .register-1-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-bottom{
+        flex-direction: column;
+    }
+    .footer-container{
+        grid-template-columns: 50%;
+    }
+}

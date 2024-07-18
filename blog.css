@@ -1,0 +1,42 @@
+.blog-body{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.article img{
+    width: 40rem;
+    margin-bottom: 1rem;
+}
+article{
+    margin-bottom: 3rem;
+}
+article a{
+    background: rgb(19, 19, 130);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+}
+article a:hover{
+    background: rgb(14, 14, 75);
+    transition: 400ms ease;
+}
+article p{    
+    margin-bottom: 2rem;
+}
+.blog-body-right p,.blog-body-right h3{
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1118px){
+    .blog-body{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 700px){
+    .article img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

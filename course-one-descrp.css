@@ -1,0 +1,108 @@
+.course-descrip-container{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 3rem;
+}
+.course-descrip-container p {
+    font-size: 0.8rem;
+}
+.cover-image-course{
+    width: 55rem;
+    height: 35rem;
+    display: flex;
+}
+.course-descrp-title{
+    display: flex;
+    gap: 50%;
+    margin-top: 1rem;
+}
+.descrp-title-i{
+    color: rgb(237, 237, 21);
+}
+.descrp-title-right{
+    background: rgb(223, 176, 223);
+    height: fit-content;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+.p-first-descrp{
+    margin-bottom: 1.5rem;
+}
+.descrp-instructor{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.descrp-instructor img{
+    width: 8rem;
+    border-radius: 50%;
+}
+.course-overview p{
+    margin-bottom: 1rem;
+}
+.course-overview{
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+}
+.course-objective i{
+    color: rgb(89, 20, 89);
+    padding-right: 0.5rem;
+}
+.course-objective p{
+    margin-bottom: 1rem;
+}
+.course-right{
+    background: white;
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(10, 20, 20, 10);
+    height: fit-content;
+    padding: 3rem 1rem;
+}
+.course-right h3{
+    margin-bottom: 1.5rem;
+}
+.course-right p{
+    margin-bottom: 1.5rem;
+}
+.course-right-link{
+    background: rgb(15, 15, 235);
+    padding: 1rem;
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+    margin-inline: auto;
+}
+.course-right-link:hover{
+    background: rgb(7, 7, 46);
+    transition: 400ms ease;
+}
+.course-right-link a{
+    color: white;
+}
+.course-right i{
+    padding-right: 0.5rem;
+    color: rgb(89, 20, 89);
+}
+
+@media screen and (max-width: 1118px){
+    .course-descrip-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cover-image-course{
+        width: 100%;
+        height: fit-content;
+    }
+    .course-descrp-title{
+        display: flex;
+        gap: 10%;
+    }
+    .p-first-descrp{
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+}

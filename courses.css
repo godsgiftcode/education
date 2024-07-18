@@ -1,0 +1,14 @@
+.courses{
+    margin-top: 3rem;
+}
+.course-top{
+    background-image: url("./images/back1.jpg");
+    height: 20rem;
+    width: 100%;
+    background-position: center;
+}
+.course-top h1{
+    color: rgb(38, 37, 37);
+    text-align: center;
+    padding-top: 10%;
+}

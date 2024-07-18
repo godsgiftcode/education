@@ -1,0 +1,78 @@
+.contact-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.contact-container i{
+    color: purple;
+    font-size: 0.8rem;
+}
+.contact-flex{
+    display: flex;
+    gap: 1.5rem;
+}
+.quarter-p i{
+    padding-right: 1.5rem;
+}
+.contact-p{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(204, 200, 200);
+}
+.space{
+    margin-top: 2.5rem;
+}
+.contact-socials li{
+    padding: 0.4rem 0.6rem;
+    border: 1px solid black;
+    color: black;
+}
+.contact-socials i{
+    color: black;
+    font-size: 1rem;
+}
+
+.contact-right{
+    background: rgb(225, 220, 220);
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input{
+    height: 3rem;
+    padding: 1rem ;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+.half-width{
+    width: 50%;
+}
+.half{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+textarea{
+    outline: none;
+    padding: 1rem;
+}
+.contact-btn{
+    width: fit-content;
+    padding: 1rem;
+    background: rgb(4, 4, 240);
+
+    color: white;
+}
+.contact-btn:hover{
+    background: navy;
+    transition: 400ms ease;
+}
+
+@media screen and (max-width: 1118px){
+    .contact-container {
+        flex-direction: column;
+    }
+}

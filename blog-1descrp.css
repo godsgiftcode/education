@@ -1,0 +1,11 @@
+article p{
+    width: 70%;
+}
+.article{
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1118px){
+    article p{
+        width: 100%;
+    }
+}
